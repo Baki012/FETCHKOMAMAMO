@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Marketplace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        #showcase {
+            min-height: 400px;
+            background: url('https://images.unsplash.com/photo-1485699842248-37ca0a695fed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+            text-align: center;
+            color: white;
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+
+        #boxes {
+            margin-top: 20px;
+        }
+
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+
+        #boxes .box img {
+            width: 90px;
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+        }
+
+        /* Bike Listings */
+        .bike-listings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .bike-container {
+            width: 300px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bike-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .bike-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .bike-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+            }
+
+            header nav {
+                margin-top: 0px;
+            }
+
+            header #branding h1 {
+                font-size: 2em;
+            }
+
+            #showcase h1 {
+                font-size: 3em;
+            }
+
+            #boxes .box {
+                width: 100%;
+            }
+
+            .bike-container {
+                width: 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Bike</span> Marketplace</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Find Your Perfect Ride</h1>
+            <p>Discover a wide selection of bikes for every adventure.</p>
+        </div>
+    </section>
+
+    <section class="bike-listings">
+        <div class="bike-container">
+            <img src="photo1.jpeg" alt="Mountain Bike">
+            <div class="bike-title">Mountain Bike</div>
+            <div class="bike-description">
+                Perfect for off-road adventures. Durable frame and excellent suspension.
+            </div>
+        </div>
+
+        <div class="bike-container">
+            <img src="photo2.jpeg"alt="Road Bike">
+            <div class="bike-title">Road Bike</div>
+            <div class="bike-description">
+                Lightweight and fast, ideal for long rides on paved roads.
+            </div>
+        </div>
+
+        <div class="bike-container">
+            <img src="photo3.jpeg" alt="City Bike">
+            <div class="bike-title">City Bike</div>
+            <div class="bike-description">
+                Comfortable and practical for urban commuting. Equipped with fenders and a rack.
+            </div>
+        </div>
+
+        <!-- Add more bike containers here -->
+        <div class="bike-container">
+            <img src="photo4.jpeg" alt="Electric Bike">
+            <div class="bike-title">Electric Bike</div>
+            <div class="bike-description">
+                Get around with ease using this electric bike, perfect for longer commutes.
+            </div>
+        </div>
+
+        <div class="bike-container">
+            <img src="photo5.jpeg" alt="Folding Bike">
+            <div class="bike-title">Folding Bike</div>
+            <div class="bike-description">
+                Compact and easy to store, ideal for commuters with limited space.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Bike Marketplace, Copyright &copy; 2025</p>
+    </footer>
+</body>
+</html>
